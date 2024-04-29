@@ -5,7 +5,7 @@ function App() {
 
     <>
 
-
+      <h1>Welcome to the Image Gallery</h1>
 
     </>
   );

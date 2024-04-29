@@ -1,9 +1,8 @@
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ReactImageGallery from 'react-image-gallery';
-import sampleImages1 from './images/sample1.jpg';
-import sampleImages2 from './images/sample2.jpg';
-import sampleImages3 from './images/sample3.jpg';
+
+const importAll = (r) => r.keys().map(r);
 
 function App() {
 

@@ -7,9 +7,9 @@ const images = importAll(require.context('./images', false, /\.(jpg)$/));
 
 function App() {
 
-  const imageItem = images.map((image,index) => ({
+  const imageItem = images.map((image, index) => ({
       
-    orginal: image,
+    original: image,
     thumbnail:image,
 
   }))

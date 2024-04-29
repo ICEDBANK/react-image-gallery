@@ -22,7 +22,16 @@ function App() {
     <>
 
       <h1>Welcome to the Image Gallery</h1>
-      return <ImageGallery items={imageItem} />;
+      <ImageGallery 
+        items={imageItem} 
+        showThumbnails = {false}
+        thumbnailPosition="left"
+        autoPlay = {true}
+        showFullscreenButton = {false}
+        showPlayButton = {false}
+        showNav = {false}
+        showBullets={true}
+      />;
 
     </>
   );

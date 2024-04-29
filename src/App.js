@@ -7,20 +7,13 @@ const images = importAll(require.context('./images', false, /\.(jpg)$/));
 
 function App() {
 
-  const images = [
-  {
-    original: sampleImages1,
-    thumbnail: sampleImages1,
-  },
-  {
-    original: sampleImages2,
-    thumbnail: sampleImages2,
-  },
-  {
-    original: sampleImages3,
-    thumbnail: sampleImages3,
-  },
-];
+  const imageItem = images.map((images,index) => ({
+      
+    orginal: images,
+    thumbnail:images,
+
+  }))
+ 
 
   return (
 
@@ -29,7 +22,7 @@ function App() {
     <>
 
       <h1>Welcome to the Image Gallery</h1>
-      <ReactImageGallery items={images} />;
+      <ReactImageGallery items={imageItem} />;
 
     </>
   );

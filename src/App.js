@@ -1,6 +1,6 @@
 
-import 'react-image-gallery/styles/css/image-gallery.css';
-import ReactImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from "react-image-gallery";
 
 const importAll = (r) => r.keys().map(r);
 const images = importAll(require.context('./images', false, /\.(jpg)$/));
@@ -22,7 +22,7 @@ function App() {
     <>
 
       <h1>Welcome to the Image Gallery</h1>
-      <ReactImageGallery items={imageItem} />;
+      return <ImageGallery items={imageItem} />;
 
     </>
   );

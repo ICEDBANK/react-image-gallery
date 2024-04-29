@@ -1,21 +1,24 @@
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ReactImageGallery from 'react-image-gallery';
+import sampleImages1 from './images/sample1.jpg';
+import sampleImages2 from './images/sample2.jpg';
+import sampleImages3 from './images/sample3.jpg';
 
 function App() {
 
   const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: sampleImages1,
+    thumbnail: sampleImages1,
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: sampleImages2,
+    thumbnail: sampleImages2,
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: sampleImages3,
+    thumbnail: sampleImages3,
   },
 ];
 
